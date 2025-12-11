@@ -10,6 +10,7 @@ def main():
     num_words = count_words(book_text)
     char_counts = count_each_char(book_text)
     print(f"Found {num_words} total words")
-    print(char_counts)
+    for char_count in char_counts:
+      print(char_count)
 
 main()
