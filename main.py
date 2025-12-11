@@ -6,14 +6,13 @@ def get_book_text(file_path):
         return f.read()
     
 def main():
-    print("============ BOOKBOT ============")
-
     if len(sys.argv) > 1:
        book_path = sys.argv[1]
     else:
        print("Usage: python3 main.py <path_to_book>")
        sys.exit(1)
-    
+       
+    print("============ BOOKBOT ============")
     print(f"Analyzing book found at {book_path}...")
     book_text = get_book_text(book_path)
 
